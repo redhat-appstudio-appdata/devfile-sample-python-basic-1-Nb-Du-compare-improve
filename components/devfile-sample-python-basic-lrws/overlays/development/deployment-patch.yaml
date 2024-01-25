@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-lrws
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/pkhander-tenant/devfile-sample-python-basic-1/devfile-sample-python-basic-lrws@sha256:9831476b6720a582f8ffe056f304e1556c5f63289d147a1994b6f6a31f65a148
+        name: my-python
+        resources: {}
+status: {}
